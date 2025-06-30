@@ -19,8 +19,8 @@ function App() {
     try {
       setLoading(true);
       setError('');
-      const res = await axios.post('http://localhost:5000/shorten', { fullUrl });
-      setShortUrl(`http://localhost:5000/${res.data.shortUrl}`);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/shorten`, { fullUrl });
+setShortUrl(`${process.env.REACT_APP_API_URL}/${res.data.shortUrl}`);
       setCopied(false);
     } catch (err) {
       setError('Failed to shorten URL. Please try again.');
