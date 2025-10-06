@@ -12,9 +12,9 @@ app.use(express.json());
 
 const uri = 'mongodb+srv://kothasanthan39:159159%40Lsh@cluster0.9tk9zft.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Connected to MongoDB!'))
-  .catch(err => console.error('Connection error', err));
+mongoose.connect(uri)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('Mongo error', err));
 
 
 // Routes
