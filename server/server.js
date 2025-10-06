@@ -10,7 +10,7 @@ app.use(express.json());
 
 // MongoDB Connection
 
-const uri = 'mongodb+srv://kothasanthan39:159159%40Lsh@cluster0.9tk9zft.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = 'mongodb+srv://santhankumarkotha:159159Ls@cluster0.hbixazk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(uri)
   .then(() => console.log('MongoDB connected'))
